@@ -1,6 +1,6 @@
 active_modules: [pygments, tags, blog, latex, disqus]
 author: Juan Marin
-canonical_url: http://hermetico.no-ip.org
+canonical_url: http://hermetico.github.io
 modules:
   pygments:
     style: tango
