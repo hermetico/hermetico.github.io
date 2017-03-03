@@ -16,4 +16,7 @@ cd rstblog
 # install the library
 python setup.py install
 
+# pygments required
+pip install pygments
+
 cd ..
