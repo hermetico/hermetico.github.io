@@ -11,5 +11,5 @@ script:
   - bash ./_scripts/deploy.sh
 env:
   global:
-  - ENCRYPTION_LABEL: "eb4973a232c5"
+  - ENCRYPTION_LABEL: "03aee79ae867"
   - RSTBLOG_REPO: "https://github.com/hermetico/rstblog.git"
