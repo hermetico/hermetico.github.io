@@ -61,4 +61,4 @@ chmod 600 deploy_key
 mv deploy_key ~/.ssh/id_rsa
 
 # Now that we're all set up, we can push.
-#git push $SSH_REPO $TARGET_BRANCH
+git push $SSH_REPO $TARGET_BRANCH
