@@ -1,10 +1,15 @@
 language: python
 # command to install dependencies
+before_install:
+  - chmod +x _scripts/install.sh
+install:
+  - bash _scripts/install.sh
 before_script:
-  - chmod +x deploy.sh
+  - chmod +x _scripts/deploy.sh
 # command to run tests
-script: bash deploy.sh
+script: :
+  - bash _scripts/deploy.sh
 env:
   global:
-  - ENCRYPTION_LABEL: "ae5506b755e0"
+  - ENCRYPTION_LABEL: "eb4973a232c5"
   - RSTBLOG_REPO: "https://github.com/hermetico/rstblog.git"
