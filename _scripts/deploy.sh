@@ -36,7 +36,7 @@ run-rstblog build _content
 
 # move results
 cd out
-cp -r ../content/_build/* .
+cp -r ../_content/_build/* .
 
 # If there are no changes (e.g. this is a README update) then just bail.
 if [ -z `git diff --exit-code` ]; then
