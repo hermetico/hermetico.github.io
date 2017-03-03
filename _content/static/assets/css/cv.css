@@ -1,0 +1,56 @@
+/*
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+    .page{border:0;}
+}
+*/
+.page{ max-width:650px;margin:auto;}
+.gray{color:rgba(0,0,0,.1);}
+    .page-content{
+        /*height: 29.8cm;*/
+        border:1px solid red;
+        overflow:hidden;
+    }
+/*
+.page{
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    border-bottom: 1px #D3D3D3 solid;
+}
+    .page:last-child{border-bottom:0;}
+*/
+
+header{
+    margin:20px 0 0 0;
+    padding-bottom:10px;
+    border-bottom:2px solid rgba(0,0,0,.1);}
+
+    .who i,
+    .who h1,
+    .who p{margin:0; padding:0;}
+    .who p{
+        font-family: "Suranna", Arial, serif;
+        font-size:30px;
+        line-height:30px;
+        font-style:italic;color:#398ad5;}
+
+    .address{margin:25px 0 0 0;text-align:right; font-size:12px;}
+    .address > ul > li{ line-height: 15px;}
+
+
+.module hr{width:90%;}
+    .module h2{font-style:italic;color:#999;font-size:32px;}
+    .module h3{color:#000;font-size:22px; font-weight: 400;  line-height: 19px; margin:2px}
+    .module h4{color:#999; font-style:italic;font-size:16px; font-weight: 400;  line-height: 19px; margin:2px}
+    .module .at, .module .when-where{color:#398ad5;}
+
+
+.footer{margin:0;}

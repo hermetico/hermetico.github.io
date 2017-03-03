@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Juan Marín - {% block og_title %}Profile{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}Hi! I am Juan Marin, computer scientist and developer{% endblock %}" />
+    <meta property="og:url" content="{% block og_url %}{{ config.canonical_url }}{% endblock %}" />
+    <meta property="og:image" content="{{ config.canonical_url }}static/thumbs/{% block image %}beer.jpg{% endblock %}" />
+    <title>Juan Marín - {% block title %}Profile{% endblock %}</title>
+    <meta name="description" content="{% block description %}Hi! I am Juan Marin, computer scientist and developer{% endblock %}">
+    <meta name="author" content="{% block author %}Juan Marín{% endblock %}">
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <!-- Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Suranna" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS-->
+    <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icon Fonts-->
+    <link href="/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css">
+    <link href="/static/assets/css/styles.css" rel="stylesheet">
+    <link href="{{ config.canonical_url }}{{ link_to('blog_feed') }}" rel="alternate" title="Feed" type="application/atom+xml">
+
+</head>
+<body class="">
+    <!-- Show menu-->
+    <div class="show-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Show menu end-->
+    <!-- Menu-->
+    <div class="overlay-menu">
+        <div class="menu-table">
+            <div class="menu-table-cell">
+                <nav><ul class="navigation">
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="{{ link_to('blog_index') }}">Blog</a></li>
+                    <li><a href="{{ link_to('blog_archive') }}">Archive</a></li>
+                    <li><a href="{{ link_to('tagcloud') }}">Tags</a></li>
+                 </ul></nav>
+            </div>
+        </div>
+    </div>
+    <!-- Menu end-->
+    <section class="wrapper">
+        <!-- Background image section-->
+        <section class="split-image parallax" data-background="/static/images/{{ self.image() }}"
+                 style="background-image: url('/static/images/{{ self.image() }}');">
+            <div class="split-image-footer">
+                    <ul class="split-list">
+                        {% if ctx and ctx.profile_page %}
+                            <li>Download cv:</li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">German</a></li>
+                            <li><a href="#">Spanish</a></li>
+                        {% else %}
+                            <li><a href="{{ link_to('blog_feed') }}">
+                                <i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+                        {% endif %}
+                    </ul>
+
+                {# here will appear the feed link #}
+                {% block feed %}{% endblock %}
+            </div>
+        </section>
+        <!-- Content section-->
+        <section class="split-content">
+
+            {% block body %}{% endblock %}
+            <!-- Footer-->
+            <footer class="footer">
+                <div class="container-fluid container-custom">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p style="text-transform:capitalize">
+                                <i class="fa fa-copyright fa-flip-horizontal" aria-hidden="true"></i> {{ year }} hermetico
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="social-list">
+                                <li><a href="https://twitter.com/marinmenyo"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href="https://www.instagram.com/marinmenyo/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/hermetico"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                <li><a href="https://github.com/hermetico"><i class="fa fa-github fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer end-->
+        </section>
+        <!-- Content section end-->
+    </section>
+    <!-- Scripts-->
+    <script src="/static/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(".show-menu-btn").on("click", function () {
+            $(this).toggleClass("open");
+            $(".overlay-menu").toggleClass("active");
+            $("body").toggleClass("menu-opened");
+        });
+    </script>
+    <script id="dsq-count-scr" src="//{{ config['modules.disqus.shortname'] }}.disqus.com/count.js" async></script>
+</body>
+</html>
+
+

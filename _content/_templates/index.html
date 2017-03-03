@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{# only changes the image, the rest of the info is in the base template #}
+{% block image %}breakfast.jpg{% endblock %}
+
+{% block body %}
+<!-- Hello text-->
+<section class="module">
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Hello, I am Juan Marin<br>Computer scientist and developer.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tincidunt orci. Maecenas fermentum rhoncus urna non vestibulum. Donec rhoncus vel mi non dictum. Aliquam et dolor in purus vulputate dapibus vel eget urna. Curabitur sed leo eleifend odio ultricies lobortis at imperdiet nunc. Duis congue ac arcu ut porttitor. Pellentesque rhoncus sagittis malesuada. Cras pretium vitae nisl quis vestibulum. Pellentesque a bibendum turpis, molestie viverra nunc. Sed sagittis elit eu sodales vehicula. Duis blandit at tellus at condimentum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hello text end-->
+<!-- Personal info-->
+<section class="module">
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <div class="col-sm-4">
+                <h6>Personal Info.</h6>
+            </div>
+            <div class="col-sm-8">
+                <ul>
+                    <li>Name: Robert Fields</li>
+                    <li>Birthdate: September 28, 1990</li>
+                    <li>Address: 122 King St, Melbourne VIC</li>
+                    <li>Phone: +44 1234 56 78</li>
+                    <li>E-mail: <a href="#">info@yourdomain.com</a></li>
+                    <li>Website: <a href="#">mysite.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Personal info end-->
+<!-- Services-->
+<section class="module">
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <div class="col-sm-4">
+                <h6>Services.</h6>
+            </div>
+            <div class="col-sm-8">
+                <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="service-list">
+                            <li>Digital Strategy</li>
+                            <li>Software Development</li>
+                            <li>Content Direction</li>
+                            <li>Interaction Design</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="service-list">
+                            <li>Websites &amp; Apps</li>
+                            <li>Responsive Design</li>
+                            <li>Digital Marketing</li>
+                            <li>User Experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services end-->
+<!-- Professional skills-->
+<section class="module">
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <div class="col-sm-4">
+                <h6>Professional skills.</h6>
+            </div>
+            <div class="col-sm-8">
+                <!-- Progress bar-->
+                <div class="progress-item">
+                    <div class="progress-title">Design, <span class="p-coutn">80</span>%</div>
+                    <div class="progress">
+                        <div class="progress-bar" aria-valuenow="80" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <!-- Progress bar end-->
+                <!-- Progress bar-->
+                <div class="progress-item">
+                    <div class="progress-title">Branding, <span class="p-coutn">60</span>%</div>
+                    <div class="progress">
+                        <div class="progress-bar" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <!-- Progress bar end-->
+                <!-- Progress bar-->
+                <div class="progress-item">
+                    <div class="progress-title">Websites, <span class="p-coutn">100</span>%</div>
+                    <div class="progress">
+                        <div class="progress-bar" aria-valuenow="100" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <!-- Progress bar end-->
+                <!-- Progress bar-->
+                <div class="progress-item">
+                    <div class="progress-title">Publishing, <span class="p-coutn">40</span>%</div>
+                    <div class="progress">
+                        <div class="progress-bar" aria-valuenow="40" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <!-- Progress bar end-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Professional skills end-->
+<!-- Counters-->
+<section class="module">
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <div class="col-sm-4">
+                <h6>My Experience.</h6>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <!-- Counter-->
+                    <div class="col-xs-6">
+                        <div class="counter">
+                            <h2 class="counter-number"><span class="counter-timer" data-from="0" data-to="12000">12,000</span></h2>
+                            <div class="counter-title">Theme Users</div>
+                        </div>
+                    </div>
+                    <!-- Counter end-->
+                    <!-- Counter-->
+                    <div class="col-xs-6">
+                        <div class="counter">
+                            <h2 class="counter-number"><span class="counter-timer" data-from="0" data-to="8">8</span></h2>
+                            <div class="counter-title">Total downloads</div>
+                        </div>
+                    </div>
+                    <!-- Counter end-->
+                    <!-- Counter-->
+                    <div class="col-xs-6">
+                        <div class="counter">
+                            <h2 class="counter-number"><span class="counter-timer" data-from="0" data-to="18">18</span></h2>
+                            <div class="counter-title">Design experiments</div>
+                        </div>
+                    </div>
+                    <!-- Counter end-->
+                    <!-- Counter-->
+                    <div class="col-xs-6">
+                        <div class="counter">
+                            <h2 class="counter-number"><span class="counter-timer" data-from="0" data-to="64">64</span></h2>
+                            <div class="counter-title">Launched startups</div>
+                        </div>
+                    </div>
+                    <!-- Counter end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counters end-->
+{% endblock %}

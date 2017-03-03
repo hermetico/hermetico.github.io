@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{# open graph extra info #}
+{% block og_url %}{{ config.canonical_url }}{{ link_to('blog_archive') }}{% endblock %}
+{% block og_title %}Blog archive{% endblock %}
+{% block og_description %}This is the blog archive{% endblock %}
+
+{% block title %}Blog archive{% endblock %}
+{% block description %}This is the blog Archive{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="container-fluid container-custom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>{{ self.title() }}</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="module">
+        <ul class="container-fluid">
+        {%- for entry in archive %}
+            <li>
+                <a href="{{ link_to('blog_archive', year=entry.year) }}">{{ entry.year }}</a>
+                <ul class="container-fluid">
+                {%- for subentry in entry.months %}
+                <li><a href="{{ link_to('blog_archive', year=entry.year,
+                                        month=subentry.month) }}">{{ subentry.month_name }}</a>
+                  — {{ subentry.count }} {{ 'entry' if subentry.count == 1 else 'entries' }}
+                {%- endfor %}
+            </ul>
+        {%- endfor %}
+        </ul>
+    </section>
+    <section class="hidden-lg-up mt-5">
+        <ul class="split-list gray">
+            <li><a href="{{ link_to('blog_feed') }}"><i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+        </ul>
+    </section>
+{% endblock %}
