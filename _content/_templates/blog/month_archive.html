@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{# open graph extra info #}
+{% block og_url %}{{ config.canonical_url }}{{ link_to('blog_archive', year=entry.year, month=entry.month)}}{% endblock %}
+{% block og_title %}Blog Archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
+{% block og_description %}This is the blog archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
+
+{% block title %}Blog archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
+{% block description %}This is the blog Archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
+
+
+{% block body %}
+
+    <header>
+        <div class="container-fluid container-custom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>{{ self.title() }}</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="module">
+        <ul class="container-fluid">
+            <li>
+                <a href="{{ link_to('blog_archive') }}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Archive</a> ·
+                <a href="{{ link_to('blog_archive', year=entry.year) }}">{{ entry.year }}</a>
+            </li>
+            {%- for entry in entry.entries %}
+                {% include 'blog/entry_media.html' %}
+            {%- endfor %}
+        </ul>
+    </section>
+    <section class="hidden-lg-up mt-5">
+        <ul class="split-list gray">
+            <li><a href="{{ link_to('blog_feed') }}"><i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+        </ul>
+    </section>
+{% endblock %}

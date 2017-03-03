@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{# open graph extra info #}
+{% block og_url %}{{ config.canonical_url }}{{ link_to('blog_index') }}{% endblock %}
+{% block og_title %}Blog{% endblock %}
+{% block og_description %}Hi! I am Juan Marin,and this is my blog{% endblock %}
+
+{% block title %}Blog{% endblock %}
+{% block description %}Hi! I am Juan Marin,and this is my blog{% endblock %}
+
+
+
+{% block body %}
+
+    <!-- header image -->
+    <div class="hidden-lg-up">
+        <img src="/static/thumbs/{{ self.image() }}" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" />
+    </div>
+
+    <header>
+        <div class="container-fluid container-custom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>{{ self.title() }}</h1>
+                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- blog entries-->
+    <section class="module">
+        <ol class="container-fluid container-custom list-unlysted">
+        {%- for entry in pagination.get_slice() %}
+            {% include 'blog/entry_media.html' %}
+        {%- endfor %}
+        </ol>
+    </section>
+
+
+    {% if show_pagination and pagination.pages > 1 %}
+        {{ pagination }}
+    {% endif %}
+
+    <section class="hidden-lg-up mt-5">
+        <ul class="split-list gray">
+            <li><a href="{{ link_to('blog_feed') }}"><i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
+        </ul>
+    </section>
+{% endblock %}

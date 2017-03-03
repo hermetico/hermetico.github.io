@@ -1,0 +1,16 @@
+<li class="media">
+    {%-if entry.image %}
+    <img class="d-flex mr-3 img-fluid hidden-xs-down rounded-circle" src="/static/thumbs/{{ entry.image }}" style="width: 64px; height: 64px;" />
+    {%- endif %}
+    <div class="media-body">
+        <h2 class="mt-0 mb-0"><a href="{{ link_to('page', slug=entry.slug) }}">{{ entry.title }}</a></h2>
+        <div class="date">
+            {{ format_date(entry.pub_date, format='medium') }} ·
+            <i class="fa fa-comments" aria-hidden="true"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ entry.slug }}"></span>
+        </div>
+
+        {% if entry.summary %}
+        {{ entry.render_summary() }} {# [<a href="{{ link_to('page', slug=entry.slug) }}">...</a>] #}
+        {% endif %}
+    </div>
+</li>
