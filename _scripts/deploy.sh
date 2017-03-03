@@ -3,7 +3,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 # our branches
 SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+TARGET_BRANCH="master"
 
 
 # Save some useful information
