@@ -1,4 +1,4 @@
-Just a Blog Engine
-==================
+Just a web + blog
+=================
 
-Hi, this is an adaptation of Armin Ronacher's Blog engine, called rstblog. There aren't many changes though, just a few.
+Hi, this is my web
