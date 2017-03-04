@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {# open graph extra info #}
-{% block og_url %}{{ config.canonical_url }}{{ link_to('blog_archive', year=entry.year, month=entry.month)}}{% endblock %}
+{% block og_url %}{{ link_to('blog_archive', year=entry.year, month=entry.month)}}{% endblock %}
 {% block og_title %}Blog Archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
 {% block og_description %}This is the blog archive for {{ entry.month_name}}, {{ entry.year }}{% endblock %}
 

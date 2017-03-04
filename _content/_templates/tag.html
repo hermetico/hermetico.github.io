@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {# open graph extra info #}
-{% block og_url %}{{ config.canonical_url }}{{ link_to('tag', tag=tag.name) }}{% endblock %}
+{% block og_url %}{{ link_to('tag', tag=tag.name) }}{% endblock %}
 {% block og_title %}Blog entries tagged “{{ tag.name }}”{% endblock %}
 {% block og_description %}These are the blog entries tagged “{{ tag.name }}”{% endblock %}
 

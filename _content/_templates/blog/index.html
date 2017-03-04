@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {# open graph extra info #}
-{% block og_url %}{{ config.canonical_url }}{{ link_to('blog_index') }}{% endblock %}
+{% block og_url %}{{ link_to('blog_index') }}{% endblock %}
 {% block og_title %}Blog{% endblock %}
 {% block og_description %}Hi! I am Juan Marin,and this is my blog{% endblock %}
 
