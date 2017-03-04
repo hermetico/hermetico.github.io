@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Juan Marín - {% block og_title %}Profile{% endblock %}" />
     <meta property="og:description" content="{% block og_description %}Hi! I am Juan Marin, computer scientist and developer{% endblock %}" />
-    <meta property="og:url" content="{% block og_url %}{{ config.canonical_url }}{% endblock %}" />
-    <meta property="og:image" content="{{ config.canonical_url }}static/thumbs/{% block image %}beer.jpg{% endblock %}" />
+    <meta property="og:url" content="{{ config.canonical_url }}/{% block og_url %}{% endblock %}" />
+    <meta property="og:image" content="{{ config.canonical_url }}/static/thumbs/{% block image %}beer.jpg{% endblock %}" />
     <title>Juan Marín - {% block title %}Profile{% endblock %}</title>
     <meta name="description" content="{% block description %}Hi! I am Juan Marin, computer scientist and developer{% endblock %}">
     <meta name="author" content="{% block author %}Juan Marín{% endblock %}">

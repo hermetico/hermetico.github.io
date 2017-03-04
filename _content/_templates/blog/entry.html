@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {# open graph extra info #}
-{% block og_url %}{{ config.canonical_url }}{{ ctx.slug }}{% endblock %}
+{% block og_url %}{{ ctx.slug }}{% endblock %}
 {% block og_title %}{{ ctx.short_title if ctx.short_title else rst.title }}{% endblock %}
 {% block og_description %}{{ rst.title if ctx.short_title else ctx.summary }}{% endblock %}
 
