@@ -3,4 +3,4 @@ Just a web + blog
 
 Hi, this is my web and it uses rstblog as a static bloggind engine and travis for the deployment
 
-.. image:: https://travis-ci.org/hermetico/hermetico.github.io.svg?branch=master
+.. image:: https://travis-ci.org/hermetico/hermetico.github.io.svg?branch=devel
