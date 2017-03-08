@@ -13,3 +13,6 @@ env:
   global:
   - ENCRYPTION_LABEL: "03aee79ae867"
   - RSTBLOG_REPO: "https://github.com/hermetico/rstblog.git"
+branches:
+  only:
+    - devel
