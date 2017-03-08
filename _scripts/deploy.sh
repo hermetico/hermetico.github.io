@@ -2,7 +2,7 @@
 set -e # Exit with nonzero exit code if anything fails
 
 # our branches
-SOURCE_BRANCH="master"
+SOURCE_BRANCH="devel"
 TARGET_BRANCH="master"
 
 
