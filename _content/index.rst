@@ -30,7 +30,7 @@ Contact
 You can reach me via:
 
 - e-mail: yojmarinv (at) gmail.com
-- Twitter: `@marinmenyo <https://twitter.com/marinmenyo>`_
-- Github: `@hermetico <http://github.com/hermetico>`_
-- Linkedin:` @hermetico <https://www.linkedin.com/in/hermetico>`_
+- `Twitter <https://twitter.com/marinmenyo>`_
+- `Github <http://github.com/hermetico>`_
+- `Linkedin <https://www.linkedin.com/in/hermetico>`_
 
