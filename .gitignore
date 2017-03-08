@@ -1,2 +1,4 @@
 _content/_build
+rstblog/
+venv/
 .idea
