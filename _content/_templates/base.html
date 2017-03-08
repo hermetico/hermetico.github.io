@@ -41,6 +41,7 @@
                     <li><a href="{{ link_to('blog_index') }}">Blog</a></li>
                     <li><a href="{{ link_to('blog_archive') }}">Archive</a></li>
                     <li><a href="{{ link_to('tagcloud') }}">Tags</a></li>
+                    <li class="links-cv">Resume: <a href="/cv/">html</a> · <a href="/static/docs/resume.pdf">pdf</a></li>
                  </ul></nav>
             </div>
         </div>
@@ -54,9 +55,7 @@
                     <ul class="split-list">
                         {% if ctx and ctx.profile_page %}
                             <li>Download cv:</li>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">German</a></li>
-                            <li><a href="#">Spanish</a></li>
+                            <li><a href="/static/docs/resume.pdf">English</a></li>
                         {% else %}
                             <li><a href="{{ link_to('blog_feed') }}">
                                 <i class="fa fa-rss" aria-hidden="true"></i> Feed</a></li>
