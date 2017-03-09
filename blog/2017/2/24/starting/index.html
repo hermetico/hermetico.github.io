@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Juan Marín - The two main commands for rst blog" />
+    <meta property="og:title" content="Juan Marín - The two main commands for rstblog" />
     <meta property="og:description" content="Here we show the two main commands for this adaptation of Armin Ronacher&#39;s rstblog" />
     <meta property="og:url" content="http://hermetico.github.io/blog/2017/2/24/starting" />
     <meta property="og:image" content="http://hermetico.github.io/static/thumbs/beer.jpg" />
-    <title>Juan Marín - The two main commands for rst blog</title>
+    <title>Juan Marín - The two main commands for rstblog</title>
     <meta name="description" content="Here we show the two main commands for this adaptation of Armin Ronacher&#39;s rstblog">
     <meta name="author" content="Juan Marín">
     <!-- Favicons-->
@@ -71,7 +71,7 @@
     
 
     <article>
-            <h1 class="title">The two main commands for rst blog</h1>
+            <h1 class="title">The two main commands for rstblog</h1>
 
 
         
@@ -83,13 +83,13 @@
         
 
         
-        <p>Once you have your first entry written, just a command is to parse it</p>
+        <p>Once you have your first entry written, just a command is to parse it, check that you have your config.yml at the root of the <tt class="docutils literal">_content folder</tt>.</p>
 <pre class="doctest-block">
-&gt;&gt;&gt; python manage.py build content
+&gt;&gt;&gt; run-rstblog build _content
 </pre>
-<p>The next command will create a small webserver and run your web in <a class="reference external" href="http://localhost:5000">localhost:500</a></p>
+<p>The next command will serve your web in <a class="reference external" href="http://localhost:5000">localhost:500</a></p>
 <pre class="doctest-block">
-&gt;&gt;&gt; python manage.py serve content
+&gt;&gt;&gt; run-rstblog serve _content
 </pre>
 <p>That's all!</p>
 <pre class="doctest-block">
@@ -115,7 +115,7 @@ title = title[title.length - 1].trim();
 var disqus_config = function () {
     this.page.url = document.location.origin + document.location.pathname;
     this.page.identifier = 'blog/2017/2/24/starting';
-    this.page.title = 'The two main commands for rst blog';
+    this.page.title = 'The two main commands for rstblog';
 };
 
 var shortname = 'hermetico';

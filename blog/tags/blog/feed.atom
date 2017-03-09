@@ -8,20 +8,20 @@
   <subtitle type="text">Recent blog posts</subtitle>
   <generator>Werkzeug</generator>
   <entry xml:base="http://hermetico.github.io/feed.atom">
-    <title type="text">The two main commands for rst blog</title>
+    <title type="text">The two main commands for rstblog</title>
     <id>http://hermetico.github.io/blog/2017/2/24/starting</id>
     <updated>2017-02-24T00:00:00Z</updated>
     <link href="http://hermetico.github.io/blog/2017/2/24/starting" />
     <author>
       <name>Juan Marin</name>
     </author>
-    <content type="html">&lt;p&gt;Once you have your first entry written, just a command is to parse it&lt;/p&gt;
+    <content type="html">&lt;p&gt;Once you have your first entry written, just a command is to parse it, check that you have your config.yml at the root of the &lt;tt class=&quot;docutils literal&quot;&gt;_content folder&lt;/tt&gt;.&lt;/p&gt;
 &lt;pre class=&quot;doctest-block&quot;&gt;
-&amp;gt;&amp;gt;&amp;gt; python manage.py build content
+&amp;gt;&amp;gt;&amp;gt; run-rstblog build _content
 &lt;/pre&gt;
-&lt;p&gt;The next command will create a small webserver and run your web in &lt;a class=&quot;reference external&quot; href=&quot;http://localhost:5000&quot;&gt;localhost:500&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The next command will serve your web in &lt;a class=&quot;reference external&quot; href=&quot;http://localhost:5000&quot;&gt;localhost:500&lt;/a&gt;&lt;/p&gt;
 &lt;pre class=&quot;doctest-block&quot;&gt;
-&amp;gt;&amp;gt;&amp;gt; python manage.py serve content
+&amp;gt;&amp;gt;&amp;gt; run-rstblog serve _content
 &lt;/pre&gt;
 &lt;p&gt;That's all!&lt;/p&gt;
 &lt;pre class=&quot;doctest-block&quot;&gt;
