@@ -2,16 +2,16 @@ public: yes
 tags: [blog]
 summary: Here we show the two main commands for this adaptation of Armin Ronacher's rstblog
 
-The two main commands for rst blog
+The two main commands for rstblog
 ==================================
 
-Once you have your first entry written, just a command is to parse it
+Once you have your first entry written, just a command is to parse it, check that you have your config.yml at the root of the ``_content folder``.
 
->>> python manage.py build content
+>>> run-rstblog build _content
 
-The next command will create a small webserver and run your web in `localhost:500 <http://localhost:5000>`_
+The next command will serve your web in `localhost:500 <http://localhost:5000>`_
 
->>> python manage.py serve content
+>>> run-rstblog serve _content
 
 
 That's all!
