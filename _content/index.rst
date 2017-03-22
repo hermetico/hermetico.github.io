@@ -5,7 +5,7 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tinci
 short_title: Profile
 profile_page: yes
 
-Hi! I am Juan Marin, computer scientist and developer.
+Hi! I am Juan Marin, computer scientist and developer
 ======================================================
 
 I was fired from a shitty job ( it seems to me now like thousand years ago ) and started studying a Vocational course based on software development. After a few months I realized that I had to devote my life to computer science. Afterwards, during the summer, I started an Internship in AMC Gestión.
