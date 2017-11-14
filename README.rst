@@ -1,7 +1,7 @@
 Just a web + blog
 =================
 
-Hi, this is my web and it uses rstblog as a static bloggind engine and travis for the deployment
+Hi, this is my web and it uses rstblog as a static blogging engine and travis for the deployment
 
 Building on devel, serving on master
 
