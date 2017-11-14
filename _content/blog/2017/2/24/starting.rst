@@ -5,7 +5,7 @@ summary: Here we show the two main commands for this adaptation of Armin Ronache
 The two main commands for rstblog
 ==================================
 
-Once you have your first entry written, just a command is to parse it, check that you have your config.yml at the root of the ``_content folder``.
+Once you have your first entry written, just a command is needed to build the blog content, check that you have your config.yml at the root of the ``_content folder``.
 
 >>> run-rstblog build _content
 
