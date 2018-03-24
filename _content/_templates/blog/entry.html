@@ -39,8 +39,9 @@
         {% endif %}
 
         {# The content of the entry #}
+		<div id="article-body">
         {{ rst.fragment }}
-
+		</div>
         {% if ctx.tags %}
             <p class=tags>This entry was tagged
             {% for tag in ctx.tags|sort(case_sensitive=true) %}
