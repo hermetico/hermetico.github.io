@@ -16,20 +16,26 @@
 
 {% block body %}
 
-    {% if ctx.image %}
-        {# entry only shows an image in mobile mode when the image is specified by configuration #}
-        <!-- header image -->
-        <div class="hidden-lg-up">
-            <img src="/static/cover/{{ self.image() }}" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" />
-        </div>
-    {% endif %}
+
 
     <article>
 
         {%- if not config.hide_title %}
             {{ rst.html_title }}
         {%- endif %}
-
+		
+		{% if ctx.image %}
+			{# entry only shows an image in mobile mode when the image is specified by configuration #}
+			<!-- header image -->
+			<div class="hidden-lg-up container-fluid no-padding">
+			  <div class="row">
+				<div class="col-md-12">
+				  <img src="/static/cover/{{ self.image() }}" width="100%" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" />
+				</div>
+			  </div>
+			</div>
+		{% endif %}
+		
         {% if ctx.pub_date %}
             <p class="date mt-0 mb-0">written on {{ format_date(ctx.pub_date, format='full') }}</p>
         {% endif %}
