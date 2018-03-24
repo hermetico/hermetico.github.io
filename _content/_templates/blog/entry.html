@@ -27,10 +27,10 @@
 		{% if ctx.image %}
 			{# entry only shows an image in mobile mode when the image is specified by configuration #}
 			<!-- header image -->
-			<div class="hidden-lg-up container-fluid no-padding">
+			<div class="hidden-lg-up container-fluid cover-container">
 			  <div class="row">
 				<div class="col-md-12">
-				  <img src="/static/cover/{{ self.image() }}" width="100%" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" />
+				  <img src="/static/cover/{{ self.image() }}" width="100%" class="img-fluid mx-auto d-block" />
 				</div>
 			  </div>
 			</div>
