@@ -37,7 +37,7 @@
 		{% endif %}
 		
         {% if ctx.pub_date %}
-            <p class="date mt-0 mb-0">written on {{ format_date(ctx.pub_date, format='full') }}</p>
+            <p class="mt-0 mb-0">written on <i class="date">{{ format_date(ctx.pub_date, format='full') }}</i></p>
         {% endif %}
 
         {% if not ctx.short_title %}
