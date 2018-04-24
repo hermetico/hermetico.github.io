@@ -8,17 +8,13 @@ profile_page: yes
 Hi! I am Juan Marin, computer scientist and developer
 ======================================================
 
-I was fired from a shitty job ( it seems to me now like thousand years ago ) and started studying a Vocational course based on software development. After a few months I realized that I had to devote my life to computer science. Afterwards, during the summer, I started an Internship in AMC Gestión.
+I am a graduate in Computer Science from the Universitat de Barcelona and a student of a Master's Degree in Computer Science at the University of Southern Denmark. I have worked as a full-stack web developer for almost 5 years in a small company in Barcelona, which gave me the opportunity to use my theoretical knowledge from the University to real world applications.
 
-I mixed theoretical learning with real experience from my internship over the following year developing web pages with ASP and Javascript. Due that we where a small business we had to work both  Backend and frontend sides. Eventually, I graduated with honors and got a part time job there.
+I have also made some collaborations with the research department of Computer vision of The University of Barcelona
 
-Then I started a Computer Science Degree, with 25. Step a step I've been passing courses while working, studying English and growing a shiny beard.
+As a student I loved learning new and different things every semester, not only from artificial intelligence and machine learning, which are the areas I am now more focused on, but also from other areas such as algorithm optimization, distributed systems or data structures. I am not afraid of changes and challenges, I think they keep me up-to-date and help me to sharp my skills.
 
-I moved on, and went to Aarhus for a semester. I've not only learned how hard is to study and live as a foreigner but also how enriching and enlightening it can be. Now, I am back in Barcelona.
-
-Nowadays I am focused in  Machine and Deep learning. That is what my bachelor's project was about: *Classifying activities from egocentric images using Convolutional Neural networks*, called `Daily activity recognition from egocentric images <https://github.com/hermetico/TFG>`_
-
-I feel confident working with Python, but I have worked with some other languages even though It wouldn't make sense to list all them here. My areas of development interest are Machine and Deep learning, artificial intelligence, web development, computer vision...
+Currently I am looking for an internship or part-time job as a developer or data scientist while finishing my Master's.
 
 
 ------------
@@ -30,7 +26,7 @@ Contact
 You can reach me via:
 
 - e-mail: yojmarinv (at) gmail.com
-- `Twitter <https://twitter.com/marinmenyo>`_
+- `Research Gate <https://www.researchgate.net/profile/Juan_Marin_Vega>`_
 - `Github <http://github.com/hermetico>`_
 - `Linkedin <https://www.linkedin.com/in/hermetico>`_
 
