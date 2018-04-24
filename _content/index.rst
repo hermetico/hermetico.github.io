@@ -14,8 +14,6 @@ I have also made some collaborations with the research department of Computer vi
 
 As a student I loved learning new and different things every semester, not only from artificial intelligence and machine learning, which are the areas I am now more focused on, but also from other areas such as algorithm optimization, distributed systems or data structures. I am not afraid of changes and challenges, I think they keep me up-to-date and help me to sharp my skills.
 
-Currently I am looking for an internship or part-time job as a developer or data scientist while finishing my Master's.
-
 
 ------------
 
